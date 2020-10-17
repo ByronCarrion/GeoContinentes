@@ -2,18 +2,56 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="1280dp"
+    android:layout_height="800dp"
+    android:background="@color/BackGroundScreen"
     tools:context=".MainActivity">
 
-    <com.esri.android.map.MapView
-        android:id="@+id/map"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        mapoptions.MapType="topographic"
 
-        mapoptions.center="34.056215, -117.195668"
-        mapoptions.ZoomLevel="16">
-    </com.esri.android.map.MapView>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/TituloGeo"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <fragment
+        android:id="@+id/pistaFragment"
+        android:name="com.edu.geocontinentes.fragments.modalinfo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="695dp"
+        tools:layout="@layout/fragment_modalinfo">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ContinentesFragment"
+        android:name="com.edu.geocontinentes.fragments.ContinentesFragment"
+        android:layout_width="1280dp"
+        android:layout_height="650dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="50dp"
+        tools:layout="@layout/fragment_continentes">
+
+    </fragment>
+
 
 </RelativeLayout>

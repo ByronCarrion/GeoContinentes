@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">GeoContinentes</string>
     <string name="TituloGeo">Pobladores y Actividad económica de los continentes</string>
+
+    <!--Titulos Continentes -->
+    <string name="asia">Asia</string>
+
+    <!--ButtonTextos -->
+    <string name="iniciar">Iniciar</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

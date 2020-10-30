@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1280dp"
+    android:layout_height="800dp"
+    android:background="@color/BackGroundScreen"
+    tools:context=".SubmenuAsia">
+
+
+    <TextView
+        android:id="@+id/textViewtitulo"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="602dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/asia"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="278dp"
+        android:layout_height="112dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="132dp"
+        android:text="@string/iniciar" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="762dp"
+        android:layout_height="615dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-44dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="203dp"
+        android:contentDescription="iniciar Actividad"
+        app:srcCompat="@drawable/continentasia" />
+</RelativeLayout>

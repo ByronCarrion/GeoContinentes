@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -25,7 +25,7 @@
         android:textSize="24sp" />
 
     <fragment
-        android:id="@+id/pistaFragment"
+        android:id="@+id/pista"
         android:name="com.edu.geocontinentes.fragments.modalinfo"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -39,19 +39,30 @@
 
     </fragment>
 
+
+
     <fragment
         android:id="@+id/ContinentesFragment"
         android:name="com.edu.geocontinentes.fragments.ContinentesFragment"
         android:layout_width="1280dp"
         android:layout_height="650dp"
-
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="3dp"
         android:layout_marginBottom="50dp"
         tools:layout="@layout/fragment_continentes">
+    </fragment>
+    <fragment
+        android:id="@+id/ContienteButtons"
+        android:name="com.edu.geocontinentes.fragments.ButtonMenu"
+        android:layout_width="1280dp"
+        android:layout_height="650dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="50dp"
+        tools:layout="@layout/fragment_button_menu">
 
     </fragment>
-
 
 </RelativeLayout>

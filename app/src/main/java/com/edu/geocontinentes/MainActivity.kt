@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import com.edu.geocontinentes.fragments.submenuNorthAmeric
 
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -31,6 +32,12 @@ class MainActivity : AppCompatActivity() {
             val animZoomIn = AnimationUtils.loadAnimation(this, R.anim.fade_in)
             textViewTitulo.startAnimation(animZoomIn)
 
+        }
+
+        val Con_NorthAmeric = findViewById(R.id.ContinentesFragmentNortheAmerica) as ImageView
+        Con_NorthAmeric.setOnClickListener {
+            val intento = Intent(this, submenuNorthAmeric::class.java)
+            startActivity(intento)
         }
 
 

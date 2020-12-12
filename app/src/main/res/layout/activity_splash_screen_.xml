@@ -5,6 +5,7 @@
     android:layout_width="1280dp"
     android:layout_height="800dp"
     android:background="#EFF3F4"
+
     tools:context=".SplashScreen_Activity">
 
     <ImageView
